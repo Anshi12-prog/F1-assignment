@@ -4,15 +4,27 @@ A new **1Fi Marketplace** section inside the existing **Shop** page, built in Re
 
 The Shop page carries the three required options — **Top Brands**, **Nearby Stores**, and **1Fi Marketplace**. The first two are intentional placeholders per the brief. The Marketplace is fully implemented end to end: browse → product detail → variant selection → EMI plan selection → review → confirmation.
 
+**Live demo:** REPLACE_WITH_YOUR_URL
+*(web build — safe-area padding and native gestures are accurate only on a device)*
+
+| Shop | Product detail | EMI plans | Confirmation |
+|---|---|---|---|
+| ![Shop](screenshots/shop.png) | ![Product detail](screenshots/product.png) | ![EMI plans](screenshots/emi.png) | ![Confirmation](screenshots/confirmation.png) |
+
 ---
 
 ## Running it
 
 ```bash
 npm install
-npm start          # then press "a" for Android, or scan the QR with Expo Go
-npm run typecheck  # tsc --noEmit
-npm test           # unit tests for the EMI and currency logic
+npm start
+```
+
+Press `w` for the browser, `a` for an Android emulator, or scan the QR with Expo Go. `npm start` serves on `http://localhost:8081` on your own machine.
+
+```bash
+npm run typecheck   # tsc --noEmit
+npm test            # unit tests for the EMI and currency logic
 ```
 
 Requires Node 18+. No backend or API keys — the data layer is self-contained.
@@ -27,7 +39,7 @@ Requires Node 18+. No backend or API keys — the data layer is self-contained.
 | **Marketplace** | Purchase-limit card, search, category filter, responsive product grid, pull-to-refresh. |
 | **Product detail** | Gallery, price with discount, variant matrix, no-cost EMI preview, highlights, merchant info, specs. |
 | **EMI plans** | Full tenure ladder with per-plan pricing, eligibility against the live limit, and merchandising tags. |
-| **Review** | Payment breakdown, lien amount, lending disclosure, submit with loading + error handling. |
+| **Review** | Payment breakdown, lien amount, lending disclosure, submit with loading and error handling. |
 | **Confirmation** | Order ID, EMI schedule summary, first EMI date, cooling-off note. |
 
 The domain is 1Fi's actual one: purchases are **no-cost EMI drawdowns against pledged mutual fund units**, so every screen is priced against the user's available purchase limit and shows the lien amount rather than treating this like a generic BNPL cart.
@@ -62,7 +74,7 @@ src/
 
 **One async primitive.** `useAsyncResource` handles the four things every screen otherwise re-implements: first-load vs. refresh, cancellation on unmount or param change, typed errors, and retry. Screens render state; they never manage it.
 
-**EMI pricing lives in the data layer.** `utils/emi.ts` holds pure, tested functions (reducing-balance amortisation, LTV-based lien sizing, eligibility, merchandising tags) and `marketplace.api.ts` calls them. The UI receives plans already annotated with `eligible` and `ineligibleReason`. A plan the user can't take is never tagged "Recommended" — recommending something unavailable is a trust problem, not a nudge.
+**EMI pricing lives in the data layer.** `utils/emi.ts` holds pure, tested functions — reducing-balance amortisation, LTV-based lien sizing, eligibility, merchandising tags — and `marketplace.api.ts` calls them. The UI receives plans already annotated with `eligible` and `ineligibleReason`. A plan the user can't take is never tagged "Recommended"; recommending something unavailable is a trust problem, not a nudge.
 
 **The variant matrix is derived, not declared.** `useVariantSelection` reads the attribute groups off the product payload, so a phone gets Storage × Colour, a laptop gets Memory × Storage and a TV gets Screen size — with no per-product UI code. Picking an option that would produce a combination the catalogue doesn't carry snaps the other attributes to the nearest real variant, so it's impossible to land on a dead end.
 
@@ -74,8 +86,8 @@ src/
 
 Every async surface has all three, and they're specific rather than generic:
 
-- Skeletons mirror the real geometry, so the grid doesn't reflow when data lands (`ProductCardSkeleton` matches `ProductCard` exactly).
-- The purchase limit and the catalogue load **independently** — a limit failure degrades to a neutral message instead of blanking the products.
+- Skeletons mirror the real geometry, so the grid doesn't reflow when data lands — `ProductCardSkeleton` matches `ProductCard` exactly.
+- The purchase limit and the catalogue load **independently**, so a limit failure degrades to a neutral message instead of blanking the products.
 - Retry is only offered when the error is actually retryable (`ApiError.retryable`).
 - `ProductImage` has its own loading and failure handling and falls back to a vector glyph, so a bad CDN entry degrades quietly instead of showing a grey box.
 - An `ErrorBoundary` wraps the tree so a render crash doesn't white-screen the app.
@@ -84,7 +96,7 @@ Every async surface has all three, and they're specific rather than generic:
 
 ### Responsiveness
 
-Column count is derived from the live viewport (`useWindowDimensions`), not a device check — 2 columns on phones, 3 on large phones and small tablets, 4 above that. It follows rotation, split-screen and foldables. Sticky footers read the bottom safe-area inset directly so CTAs clear the gesture bar on tall Android devices and notched iPhones alike.
+Column count is derived from the live viewport via `useWindowDimensions`, not a device check — 2 columns on phones, 3 on large phones and small tablets, 4 above that. It follows rotation, split-screen and foldables. Sticky footers read the bottom safe-area inset directly so CTAs clear the gesture bar on tall Android devices and notched iPhones alike.
 
 ### Accessibility
 
@@ -94,9 +106,9 @@ Roles and states on every interactive element (`radio`, `radiogroup`, `tab`, `sw
 
 ## Consistency with the existing app
 
-The Marketplace is built on tokens, not one-off styles — `src/theme` is the single source for colour, spacing, radius, elevation and the type scale, and **no component contains a hex value or a raw font size**. The palette is anchored on 1Fi's brand purple `#6C28D9`.
+The Marketplace is built on tokens, not one-off styles. `src/theme` is the single source for colour, spacing, radius, elevation and the type scale, and **no component contains a hex value or a raw font size**. The palette is anchored on 1Fi's brand purple `#6C28D9`.
 
-That's deliberate: aligning this section pixel-for-pixel with production is then a change to three files in `src/theme`, not a sweep through every component.
+That's deliberate: aligning this section pixel-for-pixel with production is a change to three files in `src/theme`, not a sweep through every component.
 
 ---
 
@@ -104,9 +116,9 @@ That's deliberate: aligning this section pixel-for-pixel with production is then
 
 `src/api/mock/products.json` holds nine products across six categories, each with real variant matrices, specifications, merchant details and per-product no-cost tenure windows. `limit.json` sets an available limit of ₹1,82,500 against a ₹7,00,000 pledged portfolio at 50% LTV.
 
-Those numbers are chosen so the flow exercises its own edges: the 65" OLED sits **above** the available limit, which is what surfaces the ineligible-plan state and the "pledge more units" path rather than leaving it as dead code.
+Those numbers are chosen so the flow exercises its own edges: the 65-inch OLED sits **above** the available limit, which surfaces the ineligible-plan state and the "pledge more units" path rather than leaving it as dead code.
 
-Product imagery is rendered as vector category glyphs so the demo has no network dependency and never shows a broken image. `ProductVariant.imageUrl` is already in the schema and wired through `ProductImage` — dropping in real CDN URLs needs no code change.
+Product imagery renders as vector category glyphs so the demo has no network dependency and never shows a broken image. `ProductVariant.imageUrl` is already in the schema and wired through `ProductImage` — dropping in real CDN URLs needs no code change.
 
 ---
 
