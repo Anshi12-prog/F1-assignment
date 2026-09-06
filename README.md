@@ -4,7 +4,7 @@ A new **1Fi Marketplace** section inside the existing **Shop** page, built in Re
 
 The Shop page carries the three required options — **Top Brands**, **Nearby Stores**, and **1Fi Marketplace**. The first two are intentional placeholders per the brief. The Marketplace is fully implemented end to end: browse → product detail → variant selection → EMI plan selection → review → confirmation.
 
-**Live demo:** REPLACE_WITH_YOUR_URL
+**Live demo:** http://localhost:8081/
 *(web build — safe-area padding and native gestures are accurate only on a device)*
 
 | Shop | Product detail | EMI plans | Confirmation |
