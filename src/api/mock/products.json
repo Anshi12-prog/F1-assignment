@@ -1,0 +1,500 @@
+[
+  {
+    "id": "p_iphone16pro",
+    "slug": "apple-iphone-16-pro",
+    "name": "iPhone 16 Pro",
+    "brand": "Apple",
+    "category": "smartphones",
+    "tagline": "A18 Pro chip, 48MP Fusion camera",
+    "description": "Titanium build with the A18 Pro chip, a 48MP Fusion main camera and the new Camera Control button. Ships with a 1-year Apple India warranty through the partner merchant.",
+    "rating": 4.8,
+    "ratingCount": 2417,
+    "badges": ["No-cost EMI", "In stock"],
+    "highlights": [
+      "6.3-inch Super Retina XDR display with ProMotion",
+      "A18 Pro chip with 6-core GPU",
+      "48MP Fusion camera with 5x Telephoto",
+      "Up to 27 hours of video playback"
+    ],
+    "specifications": [
+      {
+        "title": "Display",
+        "items": [
+          { "label": "Size", "value": "6.3-inch Super Retina XDR" },
+          { "label": "Refresh rate", "value": "1-120Hz ProMotion" },
+          { "label": "Peak brightness", "value": "2000 nits" }
+        ]
+      },
+      {
+        "title": "Performance",
+        "items": [
+          { "label": "Chipset", "value": "A18 Pro" },
+          { "label": "RAM", "value": "8 GB" },
+          { "label": "OS", "value": "iOS 18" }
+        ]
+      },
+      {
+        "title": "Battery & charging",
+        "items": [
+          { "label": "Charging", "value": "USB-C, 20W wired" },
+          { "label": "Wireless", "value": "MagSafe 25W" }
+        ]
+      }
+    ],
+    "merchant": {
+      "id": "m_unicorn",
+      "name": "Unicorn Store",
+      "deliveryEta": "Delivered in 2-4 days",
+      "warranty": "1 year Apple India warranty",
+      "returnWindowDays": 7
+    },
+    "noCostTenures": [3, 6, 9, 12],
+    "availableTenures": [3, 6, 9, 12, 18, 24],
+    "interestRate": 12,
+    "variants": [
+      { "id": "v_16p_128_nat", "sku": "IP16P-128-NAT", "mrp": 124900, "price": 119900, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "storage", "groupLabel": "Storage", "value": "128 GB" },
+          { "key": "colour", "groupLabel": "Colour", "value": "Natural Titanium", "hex": "#BFB6AC" }
+        ] },
+      { "id": "v_16p_128_blk", "sku": "IP16P-128-BLK", "mrp": 124900, "price": 119900, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "storage", "groupLabel": "Storage", "value": "128 GB" },
+          { "key": "colour", "groupLabel": "Colour", "value": "Black Titanium", "hex": "#3B3B3E" }
+        ] },
+      { "id": "v_16p_256_nat", "sku": "IP16P-256-NAT", "mrp": 134900, "price": 129900, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "storage", "groupLabel": "Storage", "value": "256 GB" },
+          { "key": "colour", "groupLabel": "Colour", "value": "Natural Titanium", "hex": "#BFB6AC" }
+        ] },
+      { "id": "v_16p_256_blk", "sku": "IP16P-256-BLK", "mrp": 134900, "price": 129900, "inStock": false, "imageUrl": null,
+        "attributes": [
+          { "key": "storage", "groupLabel": "Storage", "value": "256 GB" },
+          { "key": "colour", "groupLabel": "Colour", "value": "Black Titanium", "hex": "#3B3B3E" }
+        ] },
+      { "id": "v_16p_512_nat", "sku": "IP16P-512-NAT", "mrp": 154900, "price": 149900, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "storage", "groupLabel": "Storage", "value": "512 GB" },
+          { "key": "colour", "groupLabel": "Colour", "value": "Natural Titanium", "hex": "#BFB6AC" }
+        ] }
+    ]
+  },
+  {
+    "id": "p_s24fe",
+    "slug": "samsung-galaxy-s24-fe",
+    "name": "Galaxy S24 FE",
+    "brand": "Samsung",
+    "category": "smartphones",
+    "tagline": "Exynos 2400e with Galaxy AI",
+    "description": "A flagship-adjacent Galaxy with a 6.7-inch AMOLED, Galaxy AI features and seven years of OS upgrades.",
+    "rating": 4.4,
+    "ratingCount": 1183,
+    "badges": ["No-cost EMI"],
+    "highlights": [
+      "6.7-inch Dynamic AMOLED 2X, 120Hz",
+      "Exynos 2400e with Galaxy AI",
+      "50MP triple camera with OIS",
+      "4700mAh battery, 25W charging"
+    ],
+    "specifications": [
+      {
+        "title": "Display",
+        "items": [
+          { "label": "Size", "value": "6.7-inch Dynamic AMOLED 2X" },
+          { "label": "Refresh rate", "value": "120Hz" }
+        ]
+      },
+      {
+        "title": "Performance",
+        "items": [
+          { "label": "Chipset", "value": "Exynos 2400e" },
+          { "label": "RAM", "value": "8 GB" }
+        ]
+      }
+    ],
+    "merchant": {
+      "id": "m_samsungshop",
+      "name": "Samsung Brand Store",
+      "deliveryEta": "Delivered in 3-5 days",
+      "warranty": "1 year manufacturer warranty",
+      "returnWindowDays": 7
+    },
+    "noCostTenures": [3, 6, 9],
+    "availableTenures": [3, 6, 9, 12, 18],
+    "interestRate": 13,
+    "variants": [
+      { "id": "v_s24fe_128_gra", "sku": "S24FE-128-GRA", "mrp": 59999, "price": 49999, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "storage", "groupLabel": "Storage", "value": "128 GB" },
+          { "key": "colour", "groupLabel": "Colour", "value": "Graphite", "hex": "#4A4A4F" }
+        ] },
+      { "id": "v_s24fe_128_min", "sku": "S24FE-128-MIN", "mrp": 59999, "price": 49999, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "storage", "groupLabel": "Storage", "value": "128 GB" },
+          { "key": "colour", "groupLabel": "Colour", "value": "Mint", "hex": "#B7D9C4" }
+        ] },
+      { "id": "v_s24fe_256_gra", "sku": "S24FE-256-GRA", "mrp": 65999, "price": 55999, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "storage", "groupLabel": "Storage", "value": "256 GB" },
+          { "key": "colour", "groupLabel": "Colour", "value": "Graphite", "hex": "#4A4A4F" }
+        ] }
+    ]
+  },
+  {
+    "id": "p_mba_m3",
+    "slug": "apple-macbook-air-m3",
+    "name": "MacBook Air 13\" M3",
+    "brand": "Apple",
+    "category": "laptops",
+    "tagline": "Fanless M3 with 18-hour battery",
+    "description": "The 13-inch MacBook Air with the M3 chip, a Liquid Retina display and all-day battery in a 1.24kg body.",
+    "rating": 4.9,
+    "ratingCount": 894,
+    "badges": ["No-cost EMI", "Longest tenure"],
+    "highlights": [
+      "Apple M3 chip, 8-core CPU",
+      "13.6-inch Liquid Retina, 500 nits",
+      "Up to 18 hours battery life",
+      "Two Thunderbolt ports, MagSafe 3"
+    ],
+    "specifications": [
+      {
+        "title": "Performance",
+        "items": [
+          { "label": "Chip", "value": "Apple M3" },
+          { "label": "GPU", "value": "8-core / 10-core" }
+        ]
+      },
+      {
+        "title": "In the box",
+        "items": [
+          { "label": "Adapter", "value": "35W dual USB-C" },
+          { "label": "Cable", "value": "USB-C to MagSafe 3" }
+        ]
+      }
+    ],
+    "merchant": {
+      "id": "m_unicorn",
+      "name": "Unicorn Store",
+      "deliveryEta": "Delivered in 2-4 days",
+      "warranty": "1 year Apple India warranty",
+      "returnWindowDays": 7
+    },
+    "noCostTenures": [3, 6, 9, 12, 18],
+    "availableTenures": [3, 6, 9, 12, 18, 24, 36],
+    "interestRate": 11,
+    "variants": [
+      { "id": "v_mba_8_256", "sku": "MBA13-M3-8-256", "mrp": 114900, "price": 99900, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "memory", "groupLabel": "Memory", "value": "8 GB" },
+          { "key": "storage", "groupLabel": "Storage", "value": "256 GB" }
+        ] },
+      { "id": "v_mba_16_256", "sku": "MBA13-M3-16-256", "mrp": 134900, "price": 119900, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "memory", "groupLabel": "Memory", "value": "16 GB" },
+          { "key": "storage", "groupLabel": "Storage", "value": "256 GB" }
+        ] },
+      { "id": "v_mba_16_512", "sku": "MBA13-M3-16-512", "mrp": 154900, "price": 139900, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "memory", "groupLabel": "Memory", "value": "16 GB" },
+          { "key": "storage", "groupLabel": "Storage", "value": "512 GB" }
+        ] }
+    ]
+  },
+  {
+    "id": "p_vivobook14",
+    "slug": "asus-vivobook-14",
+    "name": "Vivobook 14",
+    "brand": "ASUS",
+    "category": "laptops",
+    "tagline": "Core i5 13th gen, 16GB RAM",
+    "description": "A everyday 14-inch laptop with a 13th-gen Core i5, 16GB of RAM and a backlit keyboard.",
+    "rating": 4.2,
+    "ratingCount": 512,
+    "badges": ["No-cost EMI"],
+    "highlights": [
+      "Intel Core i5-1335U",
+      "14-inch FHD anti-glare panel",
+      "16 GB DDR4, 512 GB SSD",
+      "1.4 kg with backlit keyboard"
+    ],
+    "specifications": [
+      {
+        "title": "Performance",
+        "items": [
+          { "label": "Processor", "value": "Intel Core i5-1335U" },
+          { "label": "Graphics", "value": "Intel Iris Xe" }
+        ]
+      }
+    ],
+    "merchant": {
+      "id": "m_croma",
+      "name": "Croma",
+      "deliveryEta": "Delivered in 4-6 days",
+      "warranty": "1 year onsite warranty",
+      "returnWindowDays": 10
+    },
+    "noCostTenures": [3, 6, 9, 12],
+    "availableTenures": [3, 6, 9, 12, 18, 24],
+    "interestRate": 13,
+    "variants": [
+      { "id": "v_vb14_16_512", "sku": "VB14-16-512", "mrp": 74990, "price": 58990, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "memory", "groupLabel": "Memory", "value": "16 GB" },
+          { "key": "storage", "groupLabel": "Storage", "value": "512 GB SSD" }
+        ] }
+    ]
+  },
+  {
+    "id": "p_watch_se",
+    "slug": "apple-watch-se-2",
+    "name": "Apple Watch SE (2nd gen)",
+    "brand": "Apple",
+    "category": "wearables",
+    "tagline": "Crash detection and sleep tracking",
+    "description": "The essential Apple Watch with crash detection, sleep stages and up to 18 hours of battery.",
+    "rating": 4.6,
+    "ratingCount": 1904,
+    "badges": ["No-cost EMI"],
+    "highlights": [
+      "Retina display, always-on off",
+      "Crash and fall detection",
+      "Sleep stages and heart rate alerts",
+      "Water resistant to 50m"
+    ],
+    "specifications": [
+      {
+        "title": "Health",
+        "items": [
+          { "label": "Sensors", "value": "Heart rate, accelerometer, gyroscope" },
+          { "label": "Water resistance", "value": "50 metres" }
+        ]
+      }
+    ],
+    "merchant": {
+      "id": "m_unicorn",
+      "name": "Unicorn Store",
+      "deliveryEta": "Delivered in 2-4 days",
+      "warranty": "1 year Apple India warranty",
+      "returnWindowDays": 7
+    },
+    "noCostTenures": [3, 6],
+    "availableTenures": [3, 6, 9, 12],
+    "interestRate": 14,
+    "variants": [
+      { "id": "v_se_40_mid", "sku": "AWSE-40-MID", "mrp": 29900, "price": 24900, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "size", "groupLabel": "Case size", "value": "40 mm" },
+          { "key": "colour", "groupLabel": "Colour", "value": "Midnight", "hex": "#2C2C34" }
+        ] },
+      { "id": "v_se_44_mid", "sku": "AWSE-44-MID", "mrp": 33900, "price": 28900, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "size", "groupLabel": "Case size", "value": "44 mm" },
+          { "key": "colour", "groupLabel": "Colour", "value": "Midnight", "hex": "#2C2C34" }
+        ] },
+      { "id": "v_se_44_sta", "sku": "AWSE-44-STA", "mrp": 33900, "price": 28900, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "size", "groupLabel": "Case size", "value": "44 mm" },
+          { "key": "colour", "groupLabel": "Colour", "value": "Starlight", "hex": "#E3D9CB" }
+        ] }
+    ]
+  },
+  {
+    "id": "p_xm5",
+    "slug": "sony-wh-1000xm5",
+    "name": "WH-1000XM5",
+    "brand": "Sony",
+    "category": "audio",
+    "tagline": "Industry-leading noise cancellation",
+    "description": "Sony's flagship over-ear headphones with eight microphones, 30-hour battery and multipoint pairing.",
+    "rating": 4.7,
+    "ratingCount": 3288,
+    "badges": ["No-cost EMI"],
+    "highlights": [
+      "Two processors, eight microphones",
+      "30-hour battery with quick charge",
+      "Speak-to-chat and multipoint",
+      "Lightweight 250g design"
+    ],
+    "specifications": [
+      {
+        "title": "Audio",
+        "items": [
+          { "label": "Driver", "value": "30mm carbon fibre" },
+          { "label": "Codecs", "value": "LDAC, AAC, SBC" }
+        ]
+      }
+    ],
+    "merchant": {
+      "id": "m_headphonezone",
+      "name": "Headphone Zone",
+      "deliveryEta": "Delivered in 2-3 days",
+      "warranty": "1 year Sony India warranty",
+      "returnWindowDays": 14
+    },
+    "noCostTenures": [3, 6, 9],
+    "availableTenures": [3, 6, 9, 12],
+    "interestRate": 14,
+    "variants": [
+      { "id": "v_xm5_blk", "sku": "XM5-BLK", "mrp": 34990, "price": 26990, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "colour", "groupLabel": "Colour", "value": "Black", "hex": "#1C1C1E" }
+        ] },
+      { "id": "v_xm5_sil", "sku": "XM5-SIL", "mrp": 34990, "price": 26990, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "colour", "groupLabel": "Colour", "value": "Platinum Silver", "hex": "#D8D5D0" }
+        ] },
+      { "id": "v_xm5_mid", "sku": "XM5-MID", "mrp": 34990, "price": 28990, "inStock": false, "imageUrl": null,
+        "attributes": [
+          { "key": "colour", "groupLabel": "Colour", "value": "Midnight Blue", "hex": "#2B3A55" }
+        ] }
+    ]
+  },
+  {
+    "id": "p_qc_ultra",
+    "slug": "bose-quietcomfort-ultra",
+    "name": "QuietComfort Ultra",
+    "brand": "Bose",
+    "category": "audio",
+    "tagline": "Immersive spatial audio",
+    "description": "Bose's spatial audio flagship with world-class active noise cancellation and a 24-hour battery.",
+    "rating": 4.5,
+    "ratingCount": 741,
+    "badges": ["No-cost EMI"],
+    "highlights": [
+      "Bose Immersive Audio",
+      "CustomTune calibration",
+      "24-hour battery life",
+      "Foldable travel case included"
+    ],
+    "specifications": [
+      {
+        "title": "Audio",
+        "items": [
+          { "label": "Modes", "value": "Quiet, Aware, Immersion" },
+          { "label": "Codecs", "value": "aptX Adaptive, AAC, SBC" }
+        ]
+      }
+    ],
+    "merchant": {
+      "id": "m_headphonezone",
+      "name": "Headphone Zone",
+      "deliveryEta": "Delivered in 2-3 days",
+      "warranty": "1 year Bose India warranty",
+      "returnWindowDays": 14
+    },
+    "noCostTenures": [3, 6],
+    "availableTenures": [3, 6, 9, 12],
+    "interestRate": 14,
+    "variants": [
+      { "id": "v_qcu_blk", "sku": "QCU-BLK", "mrp": 35900, "price": 29900, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "colour", "groupLabel": "Colour", "value": "Black", "hex": "#1C1C1E" }
+        ] },
+      { "id": "v_qcu_whi", "sku": "QCU-WHI", "mrp": 35900, "price": 31900, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "colour", "groupLabel": "Colour", "value": "White Smoke", "hex": "#EDEAE4" }
+        ] }
+    ]
+  },
+  {
+    "id": "p_lg_c4",
+    "slug": "lg-oled-evo-c4",
+    "name": "OLED evo C4",
+    "brand": "LG",
+    "category": "television",
+    "tagline": "4K 144Hz OLED with a9 Gen7",
+    "description": "LG's OLED evo C4 with the a9 Gen7 processor, Dolby Vision and a 144Hz refresh rate for console play.",
+    "rating": 4.7,
+    "ratingCount": 428,
+    "badges": ["No-cost EMI", "Longest tenure"],
+    "highlights": [
+      "Self-lit OLED evo panel",
+      "a9 AI Processor Gen7 4K",
+      "Dolby Vision and Dolby Atmos",
+      "144Hz with VRR and ALLM"
+    ],
+    "specifications": [
+      {
+        "title": "Display",
+        "items": [
+          { "label": "Panel", "value": "OLED evo" },
+          { "label": "Resolution", "value": "3840 x 2160" }
+        ]
+      },
+      {
+        "title": "Installation",
+        "items": [
+          { "label": "Wall mount", "value": "Included, free installation" }
+        ]
+      }
+    ],
+    "merchant": {
+      "id": "m_reliance",
+      "name": "Reliance Digital",
+      "deliveryEta": "Delivered in 5-7 days",
+      "warranty": "1 year comprehensive + 2 year panel",
+      "returnWindowDays": 10
+    },
+    "noCostTenures": [3, 6, 9, 12, 18, 24],
+    "availableTenures": [3, 6, 9, 12, 18, 24, 36, 48],
+    "interestRate": 12,
+    "variants": [
+      { "id": "v_c4_55", "sku": "OLED55C4", "mrp": 239990, "price": 164990, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "size", "groupLabel": "Screen size", "value": "55 inch" }
+        ] },
+      { "id": "v_c4_65", "sku": "OLED65C4", "mrp": 329990, "price": 224990, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "size", "groupLabel": "Screen size", "value": "65 inch" }
+        ] }
+    ]
+  },
+  {
+    "id": "p_dyson_v12",
+    "slug": "dyson-v12-detect-slim",
+    "name": "V12 Detect Slim",
+    "brand": "Dyson",
+    "category": "appliances",
+    "tagline": "Laser dust detection, 60 min run time",
+    "description": "A lightweight cordless vacuum with laser dust detection, a piezo sensor and up to 60 minutes of run time.",
+    "rating": 4.4,
+    "ratingCount": 336,
+    "badges": ["No-cost EMI"],
+    "highlights": [
+      "Laser reveals microscopic dust",
+      "Piezo sensor counts particles",
+      "Up to 60 minutes run time",
+      "Converts to a handheld"
+    ],
+    "specifications": [
+      {
+        "title": "Performance",
+        "items": [
+          { "label": "Suction", "value": "150 AW" },
+          { "label": "Bin volume", "value": "0.35 L" }
+        ]
+      }
+    ],
+    "merchant": {
+      "id": "m_reliance",
+      "name": "Reliance Digital",
+      "deliveryEta": "Delivered in 4-6 days",
+      "warranty": "2 year Dyson warranty",
+      "returnWindowDays": 10
+    },
+    "noCostTenures": [3, 6, 9],
+    "availableTenures": [3, 6, 9, 12, 18],
+    "interestRate": 13,
+    "variants": [
+      { "id": "v_v12_std", "sku": "V12-DS-STD", "mrp": 54900, "price": 45900, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "variant", "groupLabel": "Pack", "value": "Standard" }
+        ] },
+      { "id": "v_v12_absolute", "sku": "V12-DS-ABS", "mrp": 64900, "price": 52900, "inStock": true, "imageUrl": null,
+        "attributes": [
+          { "key": "variant", "groupLabel": "Pack", "value": "Absolute (extra tools)" }
+        ] }
+    ]
+  }
+]

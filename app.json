@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "1Fi",
+    "slug": "onefi-marketplace",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "in.onefi.app.marketplace"
+    }
+  }
+}
